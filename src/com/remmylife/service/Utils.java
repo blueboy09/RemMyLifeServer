@@ -4,6 +4,7 @@ import java.io.*;
 
 public class Utils {
 	public static Object convertToObject(byte[] bytes) {                                                       
+		ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
 		ObjectInputStream objectInputStream;
 		Object object = null;
 		try {

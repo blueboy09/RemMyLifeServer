@@ -14,20 +14,30 @@ public  class Manager {
 	
 	public Manager() {
 		super();
+		
+		/*
 		dataManager = new DataManager();
-		dataManager.execSqlFile("initial.sql");
-		dataManager.setUrl(dataManager.getUrl()+"remembermylife");
+		dataManager.execSqlFile(dir+"initial.sql");
+		dataManager.setUrl(dataManager.getUrl()+"RemMyLife");
 		this.driver = dataManager.getDriver();
 		this.url = dataManager.getUrl();
 		this.user = dataManager.getUser();
 		this.password = dataManager.getPassword();
+		*/
+		
+		this.driver = "com.mysql.jdbc.Driver";
+		this.url = "jdbc:mysql://localhost:3306/RemMyLife";
+		this.user = "yfjin";
+		this.password = "1234";
+		dataManager = new DataManager(driver,url,user,password);
+		
 	}
 
 	public Manager(String driver, String url, String user, String password) {
 		super();
 		dataManager = new DataManager();
 		dataManager.execSqlFile("initial.sql");
-		dataManager.setUrl(dataManager.getUrl()+"remembermylife");
+		dataManager.setUrl(dataManager.getUrl()+"RemMyLife");
 		this.driver = driver;
 		this.url = url;
 		this.user = user;

@@ -101,7 +101,7 @@ public class ManagerAccess {
 	// search
 	public ArrayList<Diary> searchByTitle(String title, User self, boolean own){
 		String title1 = diaryManager.dataManager.avoidAqlInjection(title);
-		String listByTitle= "Select * from diarylist where title like \"%"+title1 +"%\"";
+		String listByTitle= "Select * from diarylist where `title` like \"%"+title1 +"%\"";
 		return diaryManager.search(listByTitle, self, own);
 	}
 	
@@ -114,8 +114,8 @@ public class ManagerAccess {
 	
 	public ArrayList<Diary> searchByType(DiaryType type, User self, boolean own){
 		String typeq = type.name();
-		String listByTitle= "Select * from diarylist where  `TYPE` ='"+ typeq +"' ";
-		return diaryManager.search(listByTitle, self, own);
+		String listByType= "Select * from diarylist where  `TYPE` ='"+ typeq +"' ";
+		return diaryManager.search(listByType, self, own);
 	}
 	
 	public ArrayList<Diary> sortByDate(User self, boolean own){

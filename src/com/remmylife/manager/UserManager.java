@@ -144,11 +144,20 @@ public class UserManager extends Manager {
 	}
 	
 	public boolean check(String username){
+
 		String check = "Select * from USERLIST where `userName` = '" +username+"';";
-		ArrayList<User> UserList = execSqlQuery(check);
-		if(UserList.get(0).getUserName()!= null){
-			return true;
-		}else{
+		try {
+			dataManager.connectToDatabase();
+			dataManager.setQuery(check);
+			if(dataManager.getRowCount()>0){
+				dataManager.disconnectFromDatabase();
+				return true;
+			}else{
+				return false;
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 			return false;
 		}
 	}

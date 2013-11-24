@@ -45,7 +45,7 @@ public class DiaryManager extends Manager{
 	
 	public ArrayList<Diary> sort(String query, User user, boolean own){
 		String listown="SELECT * FROM diarylist  where `userid`= "+ user.getUserID()+ query;
-		String listshare = query + " where `shared` = 1 and `userid`<>"+ user.getUserID()+" ORDER BY date DESC ";		
+		String listshare = "SELECT * FROM diarylist  where `shared` = 1 and `userid`<>"+ user.getUserID()+ query;		
 		if(own==true){
 			return execSqlQuery(listown);
 		}else{
@@ -61,7 +61,7 @@ public class DiaryManager extends Manager{
 	
 	public void shareDiary(Diary diary,User self){
 		if(diary.getUserid()==self.getUserID()){
-			String shared = "update diarylist where `diaryid`="+diary.getId()+" SET shared = 1";
+			String shared =  "update diarylist  SET shared = 1 where `diaryid`= "+diary.getId() ;
 			
 			try {
 				dataManager.connectToDatabase();
@@ -75,7 +75,7 @@ public class DiaryManager extends Manager{
 	}
 	public void unshareDiary(Diary diary, User self){
 		if(diary.getUserid()==self.getUserID()){
-			String unshared = "update diarylist where `diaryid`="+diary.getId()+" SET shared = 0";
+			String unshared = "update diarylist  SET shared = 0 where `diaryid`= "+diary.getId() ;
 			
 			try {
 				dataManager.connectToDatabase();

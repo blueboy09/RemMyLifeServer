@@ -19,7 +19,5 @@
 			<attribute name="owner.project.facets" value="jst.web.jstl"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/yfjin/Workspaces/MyEclipse Professional/RemMyLifeServer/external-lib/jsp-api.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yfjin/Workspaces/MyEclipse Professional/RemMyLifeServer/external-lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

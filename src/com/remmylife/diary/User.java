@@ -1,9 +1,12 @@
 package com.remmylife.diary;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
-public class User {
+
+
+public class User implements Serializable{
 	private int userID;
 	private String userName;
 	private String password;
@@ -45,6 +48,8 @@ public class User {
 		this.birthday = user.getBirthday();
 		this.headportrait = user.getHeadportrait();
 	}
+
+	
 	public int getUserID() {
 		return userID;
 	}

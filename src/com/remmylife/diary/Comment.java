@@ -1,6 +1,8 @@
 package com.remmylife.diary;
 
-public class Comment {
+import java.io.Serializable;
+
+public class Comment implements Serializable{
 	private int commentid;
 	private int userid;
 	private int diaryid;

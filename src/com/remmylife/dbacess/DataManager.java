@@ -77,8 +77,8 @@ public class DataManager {
 
 	      // determine number of rows in ResultSet
 	      resultSet.last();                   // move to last row
+	      
 	      numberOfRows = resultSet.getRow();  // get row number  
- 
 	   }
 	   
 	   // set new database update string

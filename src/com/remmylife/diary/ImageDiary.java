@@ -5,6 +5,8 @@ import java.util.Date;
 
 
 
+
+
 public class ImageDiary extends Diary
 {
 	byte[] images = null;//Í¼Æ¬µÄ×Ö½ÚÁ÷
@@ -42,6 +44,8 @@ public class ImageDiary extends Diary
 		this.images=diary.getImages();
 		this.note = diary.getNote();
 	}
+
+
 
 	public byte[] getImages() {
 		return images;

@@ -1,5 +1,6 @@
 package com.remmylife.diary;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
@@ -74,6 +75,7 @@ public class Diary implements Serializable
 		this.weather = diary.getWeather();
 		this.shared = diary.isShared();
 	}
+
 
 	public int getId() {
 		return id;

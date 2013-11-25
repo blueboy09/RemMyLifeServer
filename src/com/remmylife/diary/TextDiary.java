@@ -3,6 +3,8 @@ package com.remmylife.diary;
 import java.util.Date;
 
 
+
+
 public class TextDiary extends Diary
 {
 	String text = null;
@@ -35,6 +37,8 @@ public class TextDiary extends Diary
 		super(diary);
 		this.text= diary.getText();
 	}
+
+
 
 	public String getText() {
 		return text;

@@ -3,6 +3,8 @@ package com.remmylife.diary;
 import java.util.Date;
 
 
+
+
 public class VoiceDiary extends Diary
 {
 	private byte[] voice = null;//ÒôÆµ×Ö½ÚÊý×é
@@ -39,6 +41,7 @@ public class VoiceDiary extends Diary
 		this.voice=diary.getVoice();
 		this.note=diary.getNote();
 	}
+
 
 	public byte[] getVoice() {
 		return voice;

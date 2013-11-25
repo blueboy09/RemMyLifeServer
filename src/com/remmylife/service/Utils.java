@@ -1,9 +1,11 @@
 package com.remmylife.service;
 
 import java.io.*;
+import com.remmylife.diary.*;
+import com.remmylife.manager.*;
 
 public class Utils {
-	public static Object convertToObject(byte[] bytes) {                                                       
+	public static Object convertToObject(byte[] bytes) {  
 		ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
 		ObjectInputStream objectInputStream;
 		Object object = null;

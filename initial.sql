@@ -1,6 +1,6 @@
-CREATE SCHEMA IF NOT EXISTS `RememberMyLife`;
+CREATE SCHEMA IF NOT EXISTS `RemMyLife`;
 
-USE `RememberMyLife`;
+USE `RemMyLife`;
 
 CREATE TABLE IF NOT EXISTS `UserList`(
 	`userID` INT(32) NOT NULL AUTO_INCREMENT,
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `UserList`(
 	`SEX` ENUM('male','female') NOT NULL DEFAULT 'male',
 	`birthday` VARCHAR(32) NOT NULL DEFAULT '1900-01-01',
 	`headPortrait` longblob,
-	PRIMARY KEY(userID,userName)
+	PRIMARY KEY(userID)
 ) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
 
 CREATE TABLE IF NOT EXISTS `DiaryList` (

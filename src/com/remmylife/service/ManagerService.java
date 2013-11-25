@@ -22,75 +22,95 @@ public class ManagerService {
 		return MA.loginByName(userName, password);
 	}
 	
-	public User getUser(User user){
-		return MA.getUser(user);
+	public byte[] getUser(byte[] user){
+		User user1 = (User) Utils.convertToObject(user);
+		return Utils.convertToByteArray(MA.getUser(user1));
 	}
 	
-	public boolean saveUser(User user){
-		return MA.saveUser(user);
+	public boolean saveUser(byte[] user){
+		User user1 = (User) Utils.convertToObject(user);
+		return MA.saveUser(user1);
 	}
 	
-	public boolean deleteUser(User user){
-		return MA.deleteUser(user);
+	public boolean deleteUser(byte[] user){
+		User user1 = (User) Utils.convertToObject(user);
+		return MA.deleteUser(user1);
 	}
 	
 	// diary µÄ²Ù×÷
 	
-	public boolean deleteDiary(Diary diary){
-		return MA.deleteDiary(diary);
+	public boolean deleteDiary(byte[] diary){
+		Diary diary1 = (Diary) Utils.convertToObject(diary);		
+		return MA.deleteDiary(diary1);
 				
 	}
 	
-	public boolean saveDiary(Diary diary){
-		return MA.saveDiary(diary);
+	public boolean saveDiary(byte[] diary){
+		Diary diary1 = (Diary) Utils.convertToObject(diary);
+		return MA.saveDiary(diary1);
 	}
 	
-	public void shareDiary(Diary diary, User self){
-		MA.shareDiary(diary, self);
+	public void shareDiary(byte[] diary, byte[] self){
+		Diary diary1 = (Diary) Utils.convertToObject(diary);
+		User self1 = (User) Utils.convertToObject(self);		
+		MA.shareDiary(diary1, self1);
 	}
 	
-	public void unshareDiary(Diary diary, User self){
-		MA.unshareDiary(diary, self);
+	public void unshareDiary(byte[] diary, byte[] self){
+		Diary diary1 = (Diary) Utils.convertToObject(diary);
+		User self1 = (User) Utils.convertToObject(self);
+		MA.unshareDiary(diary1, self1);
 	}
 	
-	public ArrayList<Diary> getDiaryList(User self, boolean own){
-		return MA.getDiaryList(self, own);
+	public byte[] getDiaryList(byte[] self, boolean own){
+		User self1 = (User) Utils.convertToObject(self);
+		return Utils.convertToByteArray(MA.getDiaryList(self1, own));
 	}
 	
-	public Diary getDiary(Diary diary){
-		return MA.getDiary(diary);
+	public byte[] getDiary(byte[] diary){
+		Diary diary1 = (Diary)Utils.convertToObject(diary);
+		return Utils.convertToByteArray(MA.getDiary(diary1));
 	}
 	
 	
 	// Comment
 	
-	public void saveComment(Diary diary,User user,String note){
-		MA.saveComment(diary, user, note);
+	public void saveComment(byte[] diary,byte[] user,String note){
+		Diary diary1 = (Diary)Utils.convertToObject(diary);
+		User user1 = (User) Utils.convertToObject(user);
+		MA.saveComment(diary1, user1, note);
 	}
-	public ArrayList<Comment> getComment(Diary diary){
-		return MA.getComment(diary);
+	public byte[] getComment(byte[] diary){
+		Diary diary1 = (Diary)Utils.convertToObject(diary); 
+		return Utils.convertToByteArray(MA.getComment(diary1));
 	}
 	
 	// search
 	
-	public ArrayList<Diary> searchByTitle(String title, User self, boolean own){
-		return MA.searchByTitle(title, self, own);
+	public byte[] searchByTitle(String title, byte[] self, boolean own){
+		User self1 = (User) Utils.convertToObject(self);
+		return Utils.convertToByteArray(MA.searchByTitle(title, self1, own));
 	}
 
-	public ArrayList<Diary> searchByDate(Date date, User self, boolean own){ 
-		return MA.searchByDate(date, self, own);
+	public byte[] searchByDate(Date date, byte[] self, boolean own){ 
+		User self1 = (User) Utils.convertToObject(self);
+		return Utils.convertToByteArray(MA.searchByDate(date, self1, own));
 	}
 	
-	public ArrayList<Diary> searchByType(DiaryType type, User self, boolean own){
-		return MA.searchByType(type, self, own);
+	public byte[] searchByType(String type, byte[] self, boolean own){
+		DiaryType type1= DiaryType.valueOf(type);
+		User self1 = (User) Utils.convertToObject(self);
+		return Utils.convertToByteArray(MA.searchByType(type1, self1, own));
 	}
 	
-	public ArrayList<Diary> searchByContent(String content, User self, boolean own){
-		return MA.searchByContent(content, self, own);
+	public byte[] searchByContent(String content, byte[] self, boolean own){
+		User self1 = (User) Utils.convertToObject(self);
+		return Utils.convertToByteArray(MA.searchByContent(content, self1, own));
 	}
 	
-	public ArrayList<Diary> sortByDate(User self, boolean own){
-		return MA.sortByDate(self, own);
+	public byte[] sortByDate(byte[] self, boolean own){
+		User self1 = (User) Utils.convertToObject(self);
+		return Utils.convertToByteArray(MA.sortByDate(self1, own));
 	}
 	
 

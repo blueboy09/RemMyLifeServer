@@ -90,7 +90,7 @@ public class TextDiaryManager extends DiaryManager {
 	
 	@Override
 	public Diary getDiary(Diary diary){
-		String getlist="SELECT * FROM TextList where diaryid = " +diary.getId();
+		String getlist="SELECT * FROM textlist where diaryid = " +diary.getId();
 
 		try {
 			dataManager.connectToDatabase();

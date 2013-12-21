@@ -13,7 +13,7 @@ public class DataManager {
 	private int numberOfRows;
 
 	private String driver = "com.mysql.jdbc.Driver"; 
-	private String url = "jdbc:mysql://localhost:3306/remembermylife";
+	private String url = "jdbc:mysql://localhost:3306/RemMyLife";
 	private String user = "yfjin";
 	private String password = "1234";
 	
@@ -281,7 +281,7 @@ public class DataManager {
 		}
 		
 		
-		public String avoidAqlInjection(String query){
+		public String avoidSqlInjection(String query){
 			return query.replace('"','_').replace('\'', '_').replace('`', '_');
 		}
 		

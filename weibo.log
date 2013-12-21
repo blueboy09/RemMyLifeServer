@@ -1,0 +1,610 @@
+0    DEBUG [2013-12-20 23:15:20]  Request:
+1    DEBUG [2013-12-20 23:15:20]  POSThttps://api.weibo.com/2/statuses/destroy.json
+159  DEBUG [2013-12-20 23:15:20]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+160  DEBUG [2013-12-20 23:15:20]  API-RemoteIP: 59.66.122.158
+10981 DEBUG [2013-12-20 23:15:31]  Response:
+10981 DEBUG [2013-12-20 23:15:31]  https StatusCode:400
+10981 DEBUG [2013-12-20 23:15:31]  Server:nginx/1.2.0
+10982 DEBUG [2013-12-20 23:15:31]  Date:Fri, 20 Dec 2013 15:15:15 GMT
+10982 DEBUG [2013-12-20 23:15:31]  Content-Type:application/json;charset=UTF-8
+10982 DEBUG [2013-12-20 23:15:31]  Transfer-Encoding:chunked
+10982 DEBUG [2013-12-20 23:15:31]  Connection:keep-alive
+10983 DEBUG [2013-12-20 23:15:31]  Api-Server-IP:10.77.108.47
+10983 DEBUG [2013-12-20 23:15:31]  Vary:Accept-Encoding
+10990 WARN  [2013-12-20 23:15:31]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+10992 DEBUG [2013-12-20 23:15:31]  {"error":"not your own weibo!","error_code":20102,"request":"/2/statuses/destroy.json"}
+
+11019 DEBUG [2013-12-20 23:15:31]  Request:
+11019 DEBUG [2013-12-20 23:15:31]  POSThttps://api.weibo.com/2/statuses/update.json
+11021 DEBUG [2013-12-20 23:15:31]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+11021 DEBUG [2013-12-20 23:15:31]  API-RemoteIP: 59.66.122.158
+12184 DEBUG [2013-12-20 23:15:32]  Response:
+12184 DEBUG [2013-12-20 23:15:32]  https StatusCode:200
+12184 DEBUG [2013-12-20 23:15:32]  Server:nginx/1.2.0
+12184 DEBUG [2013-12-20 23:15:32]  Date:Fri, 20 Dec 2013 15:15:17 GMT
+12184 DEBUG [2013-12-20 23:15:32]  Content-Type:application/json;charset=UTF-8
+12185 DEBUG [2013-12-20 23:15:32]  Transfer-Encoding:chunked
+12185 DEBUG [2013-12-20 23:15:32]  Connection:keep-alive
+12185 DEBUG [2013-12-20 23:15:32]  Api-Server-IP:10.77.108.45
+12185 DEBUG [2013-12-20 23:15:32]  Vary:Accept-Encoding
+12185 WARN  [2013-12-20 23:15:32]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+12186 DEBUG [2013-12-20 23:15:32]  {"created_at":"Fri Dec 20 23:15:15 +0800 2013","id":3657722723285444,"mid":"3657722723285444","idstr":"3657722723285444","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+12251 INFO  [2013-12-20 23:15:32]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657722723285444, createdAt=Fri Dec 20 23:15:15 CST 2013, id=3657722723285444, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657722723285444, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+48146 DEBUG [2013-12-20 23:16:08]  Request:
+48146 DEBUG [2013-12-20 23:16:08]  POSThttps://api.weibo.com/2/statuses/destroy.json
+48153 DEBUG [2013-12-20 23:16:08]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+48153 DEBUG [2013-12-20 23:16:08]  API-RemoteIP: 59.66.122.158
+48993 DEBUG [2013-12-20 23:16:09]  Response:
+48994 DEBUG [2013-12-20 23:16:09]  https StatusCode:200
+48994 DEBUG [2013-12-20 23:16:09]  Server:nginx/1.2.0
+48994 DEBUG [2013-12-20 23:16:09]  Date:Fri, 20 Dec 2013 15:15:54 GMT
+48994 DEBUG [2013-12-20 23:16:09]  Content-Type:application/json;charset=UTF-8
+48994 DEBUG [2013-12-20 23:16:09]  Transfer-Encoding:chunked
+48994 DEBUG [2013-12-20 23:16:09]  Connection:keep-alive
+48994 DEBUG [2013-12-20 23:16:09]  Api-Server-IP:10.77.108.42
+48994 DEBUG [2013-12-20 23:16:09]  Vary:Accept-Encoding
+48994 WARN  [2013-12-20 23:16:09]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+49016 DEBUG [2013-12-20 23:16:09]  {"created_at":"Fri Dec 20 23:15:15 +0800 2013","id":3657722723285444,"mid":"3657722723285444","idstr":"3657722723285444","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:21:58]  Request:
+1    DEBUG [2013-12-20 23:21:58]  POSThttps://api.weibo.com/2/statuses/update.json
+167  DEBUG [2013-12-20 23:21:58]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+167  DEBUG [2013-12-20 23:21:58]  API-RemoteIP: 59.66.122.158
+2074 DEBUG [2013-12-20 23:22:00]  Response:
+2075 DEBUG [2013-12-20 23:22:00]  https StatusCode:200
+2075 DEBUG [2013-12-20 23:22:00]  Server:nginx/1.2.0
+2075 DEBUG [2013-12-20 23:22:00]  Date:Fri, 20 Dec 2013 15:21:44 GMT
+2075 DEBUG [2013-12-20 23:22:00]  Content-Type:application/json;charset=UTF-8
+2075 DEBUG [2013-12-20 23:22:00]  Transfer-Encoding:chunked
+2076 DEBUG [2013-12-20 23:22:00]  Connection:keep-alive
+2076 DEBUG [2013-12-20 23:22:00]  Api-Server-IP:10.77.108.53
+2076 DEBUG [2013-12-20 23:22:00]  Vary:Accept-Encoding
+2084 WARN  [2013-12-20 23:22:00]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2086 DEBUG [2013-12-20 23:22:00]  {"created_at":"Fri Dec 20 23:21:42 +0800 2013","id":3657724346651628,"mid":"3657724346651628","idstr":"3657724346651628","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+2134 INFO  [2013-12-20 23:22:00]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657724346651628, createdAt=Fri Dec 20 23:21:42 CST 2013, id=3657724346651628, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657724346651628, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37909 DEBUG [2013-12-20 23:22:36]  Request:
+37910 DEBUG [2013-12-20 23:22:36]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37913 DEBUG [2013-12-20 23:22:36]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37914 DEBUG [2013-12-20 23:22:36]  API-RemoteIP: 59.66.122.158
+38473 DEBUG [2013-12-20 23:22:36]  Response:
+38473 DEBUG [2013-12-20 23:22:36]  https StatusCode:200
+38474 DEBUG [2013-12-20 23:22:36]  Server:nginx/1.2.0
+38474 DEBUG [2013-12-20 23:22:36]  Date:Fri, 20 Dec 2013 15:22:21 GMT
+38474 DEBUG [2013-12-20 23:22:36]  Content-Type:application/json;charset=UTF-8
+38474 DEBUG [2013-12-20 23:22:36]  Transfer-Encoding:chunked
+38475 DEBUG [2013-12-20 23:22:36]  Connection:keep-alive
+38475 DEBUG [2013-12-20 23:22:36]  Api-Server-IP:10.77.108.54
+38475 DEBUG [2013-12-20 23:22:36]  Vary:Accept-Encoding
+38475 WARN  [2013-12-20 23:22:36]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38476 DEBUG [2013-12-20 23:22:36]  {"created_at":"Fri Dec 20 23:21:42 +0800 2013","id":3657724346651628,"mid":"3657724346651628","idstr":"3657724346651628","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:23:41]  Request:
+1    DEBUG [2013-12-20 23:23:41]  POSThttps://api.weibo.com/2/statuses/update.json
+183  DEBUG [2013-12-20 23:23:41]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+184  DEBUG [2013-12-20 23:23:41]  API-RemoteIP: 59.66.122.158
+2146 DEBUG [2013-12-20 23:23:43]  Response:
+2147 DEBUG [2013-12-20 23:23:43]  https StatusCode:200
+2147 DEBUG [2013-12-20 23:23:43]  Server:nginx/1.2.0
+2148 DEBUG [2013-12-20 23:23:43]  Date:Fri, 20 Dec 2013 15:23:27 GMT
+2148 DEBUG [2013-12-20 23:23:43]  Content-Type:application/json;charset=UTF-8
+2148 DEBUG [2013-12-20 23:23:43]  Transfer-Encoding:chunked
+2148 DEBUG [2013-12-20 23:23:43]  Connection:keep-alive
+2149 DEBUG [2013-12-20 23:23:43]  Api-Server-IP:10.77.108.41
+2149 DEBUG [2013-12-20 23:23:43]  Vary:Accept-Encoding
+2157 WARN  [2013-12-20 23:23:43]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2158 DEBUG [2013-12-20 23:23:43]  {"created_at":"Fri Dec 20 23:23:26 +0800 2013","id":3657724778712077,"mid":"3657724778712077","idstr":"3657724778712077","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+2222 INFO  [2013-12-20 23:23:43]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657724778712077, createdAt=Fri Dec 20 23:23:26 CST 2013, id=3657724778712077, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657724778712077, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+38119 DEBUG [2013-12-20 23:24:19]  Request:
+38120 DEBUG [2013-12-20 23:24:19]  POSThttps://api.weibo.com/2/statuses/destroy.json
+38123 DEBUG [2013-12-20 23:24:19]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+38123 DEBUG [2013-12-20 23:24:19]  API-RemoteIP: 59.66.122.158
+38700 DEBUG [2013-12-20 23:24:20]  Response:
+38700 DEBUG [2013-12-20 23:24:20]  https StatusCode:200
+38700 DEBUG [2013-12-20 23:24:20]  Server:nginx/1.2.0
+38700 DEBUG [2013-12-20 23:24:20]  Date:Fri, 20 Dec 2013 15:24:04 GMT
+38700 DEBUG [2013-12-20 23:24:20]  Content-Type:application/json;charset=UTF-8
+38701 DEBUG [2013-12-20 23:24:20]  Transfer-Encoding:chunked
+38701 DEBUG [2013-12-20 23:24:20]  Connection:keep-alive
+38701 DEBUG [2013-12-20 23:24:20]  Api-Server-IP:10.77.108.50
+38701 DEBUG [2013-12-20 23:24:20]  Vary:Accept-Encoding
+38701 WARN  [2013-12-20 23:24:20]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38702 DEBUG [2013-12-20 23:24:20]  {"created_at":"Fri Dec 20 23:23:26 +0800 2013","id":3657724778712077,"mid":"3657724778712077","idstr":"3657724778712077","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:27:51]  Request:
+2    DEBUG [2013-12-20 23:27:51]  POSThttps://api.weibo.com/2/statuses/update.json
+159  DEBUG [2013-12-20 23:27:52]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+159  DEBUG [2013-12-20 23:27:52]  API-RemoteIP: 59.66.122.158
+1578 DEBUG [2013-12-20 23:27:53]  Response:
+1578 DEBUG [2013-12-20 23:27:53]  https StatusCode:200
+1578 DEBUG [2013-12-20 23:27:53]  Server:nginx/1.2.0
+1579 DEBUG [2013-12-20 23:27:53]  Date:Fri, 20 Dec 2013 15:27:37 GMT
+1579 DEBUG [2013-12-20 23:27:53]  Content-Type:application/json;charset=UTF-8
+1579 DEBUG [2013-12-20 23:27:53]  Transfer-Encoding:chunked
+1579 DEBUG [2013-12-20 23:27:53]  Connection:keep-alive
+1580 DEBUG [2013-12-20 23:27:53]  Api-Server-IP:10.77.108.50
+1580 DEBUG [2013-12-20 23:27:53]  Vary:Accept-Encoding
+1587 WARN  [2013-12-20 23:27:53]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1588 DEBUG [2013-12-20 23:27:53]  {"created_at":"Fri Dec 20 23:27:36 +0800 2013","id":3657725827138674,"mid":"3657725827138674","idstr":"3657725827138674","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+1639 INFO  [2013-12-20 23:27:53]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657725827138674, createdAt=Fri Dec 20 23:27:36 CST 2013, id=3657725827138674, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657725827138674, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37366 DEBUG [2013-12-20 23:28:29]  Request:
+37366 DEBUG [2013-12-20 23:28:29]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37369 DEBUG [2013-12-20 23:28:29]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37370 DEBUG [2013-12-20 23:28:29]  API-RemoteIP: 59.66.122.158
+37931 DEBUG [2013-12-20 23:28:29]  Response:
+37932 DEBUG [2013-12-20 23:28:29]  https StatusCode:200
+37932 DEBUG [2013-12-20 23:28:29]  Server:nginx/1.2.0
+37932 DEBUG [2013-12-20 23:28:29]  Date:Fri, 20 Dec 2013 15:28:14 GMT
+37932 DEBUG [2013-12-20 23:28:29]  Content-Type:application/json;charset=UTF-8
+37932 DEBUG [2013-12-20 23:28:29]  Transfer-Encoding:chunked
+37932 DEBUG [2013-12-20 23:28:29]  Connection:keep-alive
+37932 DEBUG [2013-12-20 23:28:29]  Api-Server-IP:10.77.108.37
+37933 DEBUG [2013-12-20 23:28:29]  Vary:Accept-Encoding
+37933 WARN  [2013-12-20 23:28:29]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+37936 DEBUG [2013-12-20 23:28:29]  {"created_at":"Fri Dec 20 23:27:36 +0800 2013","id":3657725827138674,"mid":"3657725827138674","idstr":"3657725827138674","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:32:26]  Request:
+0    DEBUG [2013-12-20 23:32:26]  POSThttps://api.weibo.com/2/statuses/update.json
+149  DEBUG [2013-12-20 23:32:27]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+149  DEBUG [2013-12-20 23:32:27]  API-RemoteIP: 59.66.122.158
+1607 DEBUG [2013-12-20 23:32:28]  Response:
+1608 DEBUG [2013-12-20 23:32:28]  https StatusCode:200
+1608 DEBUG [2013-12-20 23:32:28]  Server:nginx/1.2.0
+1608 DEBUG [2013-12-20 23:32:28]  Date:Fri, 20 Dec 2013 15:32:12 GMT
+1608 DEBUG [2013-12-20 23:32:28]  Content-Type:application/json;charset=UTF-8
+1609 DEBUG [2013-12-20 23:32:28]  Transfer-Encoding:chunked
+1609 DEBUG [2013-12-20 23:32:28]  Connection:keep-alive
+1609 DEBUG [2013-12-20 23:32:28]  Api-Server-IP:10.77.108.51
+1609 DEBUG [2013-12-20 23:32:28]  Vary:Accept-Encoding
+1616 WARN  [2013-12-20 23:32:28]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1617 DEBUG [2013-12-20 23:32:28]  {"created_at":"Fri Dec 20 23:32:10 +0800 2013","id":3657726980402263,"mid":"3657726980402263","idstr":"3657726980402263","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+1654 INFO  [2013-12-20 23:32:28]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657726980402263, createdAt=Fri Dec 20 23:32:10 CST 2013, id=3657726980402263, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657726980402263, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37472 DEBUG [2013-12-20 23:33:04]  Request:
+37472 DEBUG [2013-12-20 23:33:04]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37474 DEBUG [2013-12-20 23:33:04]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37475 DEBUG [2013-12-20 23:33:04]  API-RemoteIP: 59.66.122.158
+38040 DEBUG [2013-12-20 23:33:04]  Response:
+38040 DEBUG [2013-12-20 23:33:04]  https StatusCode:200
+38041 DEBUG [2013-12-20 23:33:04]  Server:nginx/1.2.0
+38041 DEBUG [2013-12-20 23:33:04]  Date:Fri, 20 Dec 2013 15:32:49 GMT
+38041 DEBUG [2013-12-20 23:33:04]  Content-Type:application/json;charset=UTF-8
+38041 DEBUG [2013-12-20 23:33:04]  Transfer-Encoding:chunked
+38041 DEBUG [2013-12-20 23:33:04]  Connection:keep-alive
+38042 DEBUG [2013-12-20 23:33:04]  Api-Server-IP:10.77.108.39
+38042 DEBUG [2013-12-20 23:33:04]  Vary:Accept-Encoding
+38042 WARN  [2013-12-20 23:33:04]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38043 DEBUG [2013-12-20 23:33:04]  {"created_at":"Fri Dec 20 23:32:10 +0800 2013","id":3657726980402263,"mid":"3657726980402263","idstr":"3657726980402263","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:34:13]  Request:
+0    DEBUG [2013-12-20 23:34:13]  POSThttps://api.weibo.com/2/statuses/update.json
+163  DEBUG [2013-12-20 23:34:13]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+163  DEBUG [2013-12-20 23:34:13]  API-RemoteIP: 59.66.122.158
+4599 DEBUG [2013-12-20 23:34:18]  Response:
+4600 DEBUG [2013-12-20 23:34:18]  https StatusCode:200
+4600 DEBUG [2013-12-20 23:34:18]  Server:nginx/1.2.0
+4600 DEBUG [2013-12-20 23:34:18]  Date:Fri, 20 Dec 2013 15:34:02 GMT
+4602 DEBUG [2013-12-20 23:34:18]  Content-Type:application/json;charset=UTF-8
+4602 DEBUG [2013-12-20 23:34:18]  Transfer-Encoding:chunked
+4602 DEBUG [2013-12-20 23:34:18]  Connection:keep-alive
+4602 DEBUG [2013-12-20 23:34:18]  Api-Server-IP:10.77.108.37
+4602 DEBUG [2013-12-20 23:34:18]  Vary:Accept-Encoding
+4610 WARN  [2013-12-20 23:34:18]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+4611 DEBUG [2013-12-20 23:34:18]  {"created_at":"Fri Dec 20 23:34:00 +0800 2013","id":3657727442093031,"mid":"3657727442093031","idstr":"3657727442093031","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+4657 INFO  [2013-12-20 23:34:18]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657727442093031, createdAt=Fri Dec 20 23:34:00 CST 2013, id=3657727442093031, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657727442093031, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+40440 DEBUG [2013-12-20 23:34:54]  Request:
+40440 DEBUG [2013-12-20 23:34:54]  POSThttps://api.weibo.com/2/statuses/destroy.json
+40444 DEBUG [2013-12-20 23:34:54]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+40445 DEBUG [2013-12-20 23:34:54]  API-RemoteIP: 59.66.122.158
+41014 DEBUG [2013-12-20 23:34:54]  Response:
+41014 DEBUG [2013-12-20 23:34:54]  https StatusCode:200
+41014 DEBUG [2013-12-20 23:34:54]  Server:nginx/1.2.0
+41015 DEBUG [2013-12-20 23:34:54]  Date:Fri, 20 Dec 2013 15:34:38 GMT
+41015 DEBUG [2013-12-20 23:34:54]  Content-Type:application/json;charset=UTF-8
+41015 DEBUG [2013-12-20 23:34:54]  Transfer-Encoding:chunked
+41015 DEBUG [2013-12-20 23:34:54]  Connection:keep-alive
+41015 DEBUG [2013-12-20 23:34:54]  Api-Server-IP:10.77.108.38
+41015 DEBUG [2013-12-20 23:34:54]  Vary:Accept-Encoding
+41015 WARN  [2013-12-20 23:34:54]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+41016 DEBUG [2013-12-20 23:34:54]  {"created_at":"Fri Dec 20 23:34:00 +0800 2013","id":3657727442093031,"mid":"3657727442093031","idstr":"3657727442093031","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:36:44]  Request:
+1    DEBUG [2013-12-20 23:36:44]  POSThttps://api.weibo.com/2/statuses/update.json
+147  DEBUG [2013-12-20 23:36:44]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+148  DEBUG [2013-12-20 23:36:44]  API-RemoteIP: 59.66.122.158
+2176 DEBUG [2013-12-20 23:36:46]  Response:
+2176 DEBUG [2013-12-20 23:36:46]  https StatusCode:200
+2177 DEBUG [2013-12-20 23:36:46]  Server:nginx/1.2.0
+2177 DEBUG [2013-12-20 23:36:46]  Date:Fri, 20 Dec 2013 15:36:31 GMT
+2177 DEBUG [2013-12-20 23:36:46]  Content-Type:application/json;charset=UTF-8
+2178 DEBUG [2013-12-20 23:36:46]  Transfer-Encoding:chunked
+2178 DEBUG [2013-12-20 23:36:46]  Connection:keep-alive
+2178 DEBUG [2013-12-20 23:36:46]  Api-Server-IP:10.77.108.45
+2178 DEBUG [2013-12-20 23:36:46]  Vary:Accept-Encoding
+2185 WARN  [2013-12-20 23:36:46]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2187 DEBUG [2013-12-20 23:36:46]  {"created_at":"Fri Dec 20 23:36:29 +0800 2013","id":3657728067098116,"mid":"3657728067098116","idstr":"3657728067098116","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+2234 INFO  [2013-12-20 23:36:47]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657728067098116, createdAt=Fri Dec 20 23:36:29 CST 2013, id=3657728067098116, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657728067098116, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37993 DEBUG [2013-12-20 23:37:22]  Request:
+37993 DEBUG [2013-12-20 23:37:22]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37995 DEBUG [2013-12-20 23:37:22]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37996 DEBUG [2013-12-20 23:37:22]  API-RemoteIP: 59.66.122.158
+39700 DEBUG [2013-12-20 23:37:24]  Response:
+39701 DEBUG [2013-12-20 23:37:24]  https StatusCode:200
+39701 DEBUG [2013-12-20 23:37:24]  Server:nginx/1.2.0
+39701 DEBUG [2013-12-20 23:37:24]  Date:Fri, 20 Dec 2013 15:37:08 GMT
+39701 DEBUG [2013-12-20 23:37:24]  Content-Type:application/json;charset=UTF-8
+39701 DEBUG [2013-12-20 23:37:24]  Transfer-Encoding:chunked
+39702 DEBUG [2013-12-20 23:37:24]  Connection:keep-alive
+39702 DEBUG [2013-12-20 23:37:24]  Api-Server-IP:10.77.108.45
+39702 DEBUG [2013-12-20 23:37:24]  Vary:Accept-Encoding
+39702 WARN  [2013-12-20 23:37:24]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+39703 DEBUG [2013-12-20 23:37:24]  {"created_at":"Fri Dec 20 23:36:29 +0800 2013","id":3657728067098116,"mid":"3657728067098116","idstr":"3657728067098116","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:37:56]  Request:
+1    DEBUG [2013-12-20 23:37:56]  POSThttps://api.weibo.com/2/statuses/update.json
+154  DEBUG [2013-12-20 23:37:57]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+155  DEBUG [2013-12-20 23:37:57]  API-RemoteIP: 59.66.122.158
+1732 DEBUG [2013-12-20 23:37:58]  Response:
+1732 DEBUG [2013-12-20 23:37:58]  https StatusCode:200
+1732 DEBUG [2013-12-20 23:37:58]  Server:nginx/1.2.0
+1733 DEBUG [2013-12-20 23:37:58]  Date:Fri, 20 Dec 2013 15:37:43 GMT
+1733 DEBUG [2013-12-20 23:37:58]  Content-Type:application/json;charset=UTF-8
+1733 DEBUG [2013-12-20 23:37:58]  Transfer-Encoding:chunked
+1733 DEBUG [2013-12-20 23:37:58]  Connection:keep-alive
+1734 DEBUG [2013-12-20 23:37:58]  Api-Server-IP:10.77.108.55
+1734 DEBUG [2013-12-20 23:37:58]  Vary:Accept-Encoding
+1742 WARN  [2013-12-20 23:37:58]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1744 DEBUG [2013-12-20 23:37:58]  {"created_at":"Fri Dec 20 23:37:41 +0800 2013","id":3657728368851326,"mid":"3657728368851326","idstr":"3657728368851326","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+1864 INFO  [2013-12-20 23:37:58]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657728368851326, createdAt=Fri Dec 20 23:37:41 CST 2013, id=3657728368851326, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657728368851326, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37595 DEBUG [2013-12-20 23:38:34]  Request:
+37595 DEBUG [2013-12-20 23:38:34]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37599 DEBUG [2013-12-20 23:38:34]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37599 DEBUG [2013-12-20 23:38:34]  API-RemoteIP: 59.66.122.158
+38158 DEBUG [2013-12-20 23:38:35]  Response:
+38159 DEBUG [2013-12-20 23:38:35]  https StatusCode:200
+38159 DEBUG [2013-12-20 23:38:35]  Server:nginx/1.2.0
+38159 DEBUG [2013-12-20 23:38:35]  Date:Fri, 20 Dec 2013 15:38:19 GMT
+38159 DEBUG [2013-12-20 23:38:35]  Content-Type:application/json;charset=UTF-8
+38160 DEBUG [2013-12-20 23:38:35]  Transfer-Encoding:chunked
+38160 DEBUG [2013-12-20 23:38:35]  Connection:keep-alive
+38160 DEBUG [2013-12-20 23:38:35]  Api-Server-IP:10.77.108.36
+38160 DEBUG [2013-12-20 23:38:35]  Vary:Accept-Encoding
+38160 WARN  [2013-12-20 23:38:35]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38161 DEBUG [2013-12-20 23:38:35]  {"created_at":"Fri Dec 20 23:37:41 +0800 2013","id":3657728368851326,"mid":"3657728368851326","idstr":"3657728368851326","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:40:01]  Request:
+1    DEBUG [2013-12-20 23:40:01]  POSThttps://api.weibo.com/2/statuses/update.json
+168  DEBUG [2013-12-20 23:40:01]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+168  DEBUG [2013-12-20 23:40:01]  API-RemoteIP: 59.66.122.158
+2023 DEBUG [2013-12-20 23:40:03]  Response:
+2024 DEBUG [2013-12-20 23:40:03]  https StatusCode:200
+2024 DEBUG [2013-12-20 23:40:03]  Server:nginx/1.2.0
+2024 DEBUG [2013-12-20 23:40:03]  Date:Fri, 20 Dec 2013 15:39:47 GMT
+2024 DEBUG [2013-12-20 23:40:03]  Content-Type:application/json;charset=UTF-8
+2024 DEBUG [2013-12-20 23:40:03]  Transfer-Encoding:chunked
+2025 DEBUG [2013-12-20 23:40:03]  Connection:keep-alive
+2025 DEBUG [2013-12-20 23:40:03]  Api-Server-IP:10.77.108.43
+2025 DEBUG [2013-12-20 23:40:03]  Vary:Accept-Encoding
+2030 WARN  [2013-12-20 23:40:03]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2030 DEBUG [2013-12-20 23:40:03]  {"created_at":"Fri Dec 20 23:39:45 +0800 2013","id":3657728888989346,"mid":"3657728888989346","idstr":"3657728888989346","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+2072 INFO  [2013-12-20 23:40:03]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657728888989346, createdAt=Fri Dec 20 23:39:45 CST 2013, id=3657728888989346, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657728888989346, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37984 DEBUG [2013-12-20 23:40:39]  Request:
+37985 DEBUG [2013-12-20 23:40:39]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37988 DEBUG [2013-12-20 23:40:39]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37988 DEBUG [2013-12-20 23:40:39]  API-RemoteIP: 59.66.122.158
+41892 DEBUG [2013-12-20 23:40:43]  Response:
+41893 DEBUG [2013-12-20 23:40:43]  https StatusCode:200
+41893 DEBUG [2013-12-20 23:40:43]  Server:nginx/1.2.0
+41893 DEBUG [2013-12-20 23:40:43]  Date:Fri, 20 Dec 2013 15:40:27 GMT
+41893 DEBUG [2013-12-20 23:40:43]  Content-Type:application/json;charset=UTF-8
+41894 DEBUG [2013-12-20 23:40:43]  Transfer-Encoding:chunked
+41894 DEBUG [2013-12-20 23:40:43]  Connection:keep-alive
+41895 DEBUG [2013-12-20 23:40:43]  Api-Server-IP:10.77.108.43
+41895 DEBUG [2013-12-20 23:40:43]  Vary:Accept-Encoding
+41895 WARN  [2013-12-20 23:40:43]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+41896 DEBUG [2013-12-20 23:40:43]  {"created_at":"Fri Dec 20 23:39:45 +0800 2013","id":3657728888989346,"mid":"3657728888989346","idstr":"3657728888989346","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:41:08]  Request:
+1    DEBUG [2013-12-20 23:41:08]  POSThttps://api.weibo.com/2/statuses/update.json
+158  DEBUG [2013-12-20 23:41:08]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+159  DEBUG [2013-12-20 23:41:08]  API-RemoteIP: 59.66.122.158
+1608 DEBUG [2013-12-20 23:41:09]  Response:
+1609 DEBUG [2013-12-20 23:41:09]  https StatusCode:200
+1609 DEBUG [2013-12-20 23:41:09]  Server:nginx/1.2.0
+1609 DEBUG [2013-12-20 23:41:09]  Date:Fri, 20 Dec 2013 15:40:54 GMT
+1609 DEBUG [2013-12-20 23:41:09]  Content-Type:application/json;charset=UTF-8
+1609 DEBUG [2013-12-20 23:41:09]  Transfer-Encoding:chunked
+1609 DEBUG [2013-12-20 23:41:09]  Connection:keep-alive
+1610 DEBUG [2013-12-20 23:41:09]  Api-Server-IP:10.77.108.46
+1610 DEBUG [2013-12-20 23:41:09]  Vary:Accept-Encoding
+1616 WARN  [2013-12-20 23:41:09]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1617 DEBUG [2013-12-20 23:41:09]  {"created_at":"Fri Dec 20 23:40:52 +0800 2013","id":3657729169752277,"mid":"3657729169752277","idstr":"3657729169752277","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+1657 INFO  [2013-12-20 23:41:09]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657729169752277, createdAt=Fri Dec 20 23:40:52 CST 2013, id=3657729169752277, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657729169752277, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37888 DEBUG [2013-12-20 23:41:46]  Request:
+37889 DEBUG [2013-12-20 23:41:46]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37892 DEBUG [2013-12-20 23:41:46]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37893 DEBUG [2013-12-20 23:41:46]  API-RemoteIP: 59.66.122.158
+38521 DEBUG [2013-12-20 23:41:46]  Response:
+38521 DEBUG [2013-12-20 23:41:46]  https StatusCode:200
+38522 DEBUG [2013-12-20 23:41:46]  Server:nginx/1.2.0
+38522 DEBUG [2013-12-20 23:41:46]  Date:Fri, 20 Dec 2013 15:41:31 GMT
+38522 DEBUG [2013-12-20 23:41:46]  Content-Type:application/json;charset=UTF-8
+38522 DEBUG [2013-12-20 23:41:46]  Transfer-Encoding:chunked
+38522 DEBUG [2013-12-20 23:41:46]  Connection:keep-alive
+38523 DEBUG [2013-12-20 23:41:46]  Api-Server-IP:10.77.108.51
+38523 DEBUG [2013-12-20 23:41:46]  Vary:Accept-Encoding
+38523 WARN  [2013-12-20 23:41:46]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38524 DEBUG [2013-12-20 23:41:46]  {"created_at":"Fri Dec 20 23:40:52 +0800 2013","id":3657729169752277,"mid":"3657729169752277","idstr":"3657729169752277","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:42:04]  Request:
+1    DEBUG [2013-12-20 23:42:04]  POSThttps://api.weibo.com/2/statuses/update.json
+215  DEBUG [2013-12-20 23:42:04]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+215  DEBUG [2013-12-20 23:42:04]  API-RemoteIP: 59.66.122.158
+1636 DEBUG [2013-12-20 23:42:05]  Response:
+1636 DEBUG [2013-12-20 23:42:05]  https StatusCode:400
+1636 DEBUG [2013-12-20 23:42:05]  Server:nginx/1.2.0
+1637 DEBUG [2013-12-20 23:42:05]  Date:Fri, 20 Dec 2013 15:41:50 GMT
+1637 DEBUG [2013-12-20 23:42:05]  Content-Type:application/json;charset=UTF-8
+1637 DEBUG [2013-12-20 23:42:05]  Transfer-Encoding:chunked
+1638 DEBUG [2013-12-20 23:42:05]  Connection:keep-alive
+1638 DEBUG [2013-12-20 23:42:05]  Api-Server-IP:10.77.108.38
+1638 DEBUG [2013-12-20 23:42:05]  Vary:Accept-Encoding
+1645 WARN  [2013-12-20 23:42:05]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1646 DEBUG [2013-12-20 23:42:05]  {"error":"repeat content!","error_code":20019,"request":"/2/statuses/update.json"}
+
+37767 DEBUG [2013-12-20 23:42:41]  Request:
+37767 DEBUG [2013-12-20 23:42:41]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37769 DEBUG [2013-12-20 23:42:41]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37770 DEBUG [2013-12-20 23:42:41]  API-RemoteIP: 59.66.122.158
+38306 DEBUG [2013-12-20 23:42:42]  Response:
+38307 DEBUG [2013-12-20 23:42:42]  https StatusCode:400
+38307 DEBUG [2013-12-20 23:42:42]  Server:nginx/1.2.0
+38307 DEBUG [2013-12-20 23:42:42]  Date:Fri, 20 Dec 2013 15:42:26 GMT
+38307 DEBUG [2013-12-20 23:42:42]  Content-Type:application/json;charset=UTF-8
+38307 DEBUG [2013-12-20 23:42:42]  Transfer-Encoding:chunked
+38308 DEBUG [2013-12-20 23:42:42]  Connection:keep-alive
+38308 DEBUG [2013-12-20 23:42:42]  Api-Server-IP:10.77.108.45
+38308 DEBUG [2013-12-20 23:42:42]  Vary:Accept-Encoding
+38308 WARN  [2013-12-20 23:42:42]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38309 DEBUG [2013-12-20 23:42:42]  {"error":"parameter (id)'s value invalid,expect (long[1~9223372036854775807]), but get (0), see doc for more info.","error_code":10017,"request":"/2/statuses/destroy.json"}
+
+0    DEBUG [2013-12-20 23:44:46]  Request:
+1    DEBUG [2013-12-20 23:44:46]  POSThttps://api.weibo.com/2/statuses/update.json
+176  DEBUG [2013-12-20 23:44:46]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+176  DEBUG [2013-12-20 23:44:46]  API-RemoteIP: 59.66.122.158
+1823 DEBUG [2013-12-20 23:44:48]  Response:
+1823 DEBUG [2013-12-20 23:44:48]  https StatusCode:200
+1823 DEBUG [2013-12-20 23:44:48]  Server:nginx/1.2.0
+1824 DEBUG [2013-12-20 23:44:48]  Date:Fri, 20 Dec 2013 15:44:32 GMT
+1824 DEBUG [2013-12-20 23:44:48]  Content-Type:application/json;charset=UTF-8
+1824 DEBUG [2013-12-20 23:44:48]  Transfer-Encoding:chunked
+1824 DEBUG [2013-12-20 23:44:48]  Connection:keep-alive
+1824 DEBUG [2013-12-20 23:44:48]  Api-Server-IP:10.77.108.45
+1824 DEBUG [2013-12-20 23:44:48]  Vary:Accept-Encoding
+1829 WARN  [2013-12-20 23:44:48]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1830 DEBUG [2013-12-20 23:44:48]  {"created_at":"Fri Dec 20 23:44:30 +0800 2013","id":3657730084466096,"mid":"3657730084466096","idstr":"3657730084466096","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+1868 INFO  [2013-12-20 23:44:48]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657730084466096, createdAt=Fri Dec 20 23:44:30 CST 2013, id=3657730084466096, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657730084466096, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37727 DEBUG [2013-12-20 23:45:24]  Request:
+37727 DEBUG [2013-12-20 23:45:24]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37730 DEBUG [2013-12-20 23:45:24]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37730 DEBUG [2013-12-20 23:45:24]  API-RemoteIP: 127.0.0.1
+0    DEBUG [2013-12-20 23:46:20]  Request:
+1    DEBUG [2013-12-20 23:46:20]  POSThttps://api.weibo.com/2/statuses/destroy.json
+161  DEBUG [2013-12-20 23:46:20]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+162  DEBUG [2013-12-20 23:46:20]  API-RemoteIP: 59.66.122.158
+1504 DEBUG [2013-12-20 23:46:21]  Response:
+1505 DEBUG [2013-12-20 23:46:21]  https StatusCode:200
+1505 DEBUG [2013-12-20 23:46:21]  Server:nginx/1.2.0
+1505 DEBUG [2013-12-20 23:46:21]  Date:Fri, 20 Dec 2013 15:46:05 GMT
+1505 DEBUG [2013-12-20 23:46:21]  Content-Type:application/json;charset=UTF-8
+1505 DEBUG [2013-12-20 23:46:21]  Transfer-Encoding:chunked
+1506 DEBUG [2013-12-20 23:46:21]  Connection:keep-alive
+1506 DEBUG [2013-12-20 23:46:21]  Api-Server-IP:10.77.108.45
+1506 DEBUG [2013-12-20 23:46:21]  Vary:Accept-Encoding
+1512 WARN  [2013-12-20 23:46:21]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1513 DEBUG [2013-12-20 23:46:21]  {"created_at":"Fri Dec 20 23:44:30 +0800 2013","id":3657730084466096,"mid":"3657730084466096","idstr":"3657730084466096","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+1585 DEBUG [2013-12-20 23:46:21]  Request:
+1585 DEBUG [2013-12-20 23:46:21]  POSThttps://api.weibo.com/2/statuses/update.json
+1586 DEBUG [2013-12-20 23:46:21]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+1586 DEBUG [2013-12-20 23:46:21]  API-RemoteIP: 59.66.122.158
+2372 DEBUG [2013-12-20 23:46:22]  Response:
+2373 DEBUG [2013-12-20 23:46:22]  https StatusCode:200
+2373 DEBUG [2013-12-20 23:46:22]  Server:nginx/1.2.0
+2374 DEBUG [2013-12-20 23:46:22]  Date:Fri, 20 Dec 2013 15:46:06 GMT
+2374 DEBUG [2013-12-20 23:46:22]  Content-Type:application/json;charset=UTF-8
+2374 DEBUG [2013-12-20 23:46:22]  Transfer-Encoding:chunked
+2374 DEBUG [2013-12-20 23:46:22]  Connection:keep-alive
+2374 DEBUG [2013-12-20 23:46:22]  Api-Server-IP:10.77.108.56
+2375 DEBUG [2013-12-20 23:46:22]  Vary:Accept-Encoding
+2375 WARN  [2013-12-20 23:46:22]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2376 DEBUG [2013-12-20 23:46:22]  {"created_at":"Fri Dec 20 23:46:04 +0800 2013","id":3657730478483914,"mid":"3657730478483914","idstr":"3657730478483914","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+2412 INFO  [2013-12-20 23:46:22]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657730478483914, createdAt=Fri Dec 20 23:46:04 CST 2013, id=3657730478483914, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657730478483914, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+38542 DEBUG [2013-12-20 23:46:58]  Request:
+38543 DEBUG [2013-12-20 23:46:58]  POSThttps://api.weibo.com/2/statuses/destroy.json
+38547 DEBUG [2013-12-20 23:46:58]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+38547 DEBUG [2013-12-20 23:46:58]  API-RemoteIP: 59.66.122.158
+39110 DEBUG [2013-12-20 23:46:59]  Response:
+39110 DEBUG [2013-12-20 23:46:59]  https StatusCode:200
+39111 DEBUG [2013-12-20 23:46:59]  Server:nginx/1.2.0
+39111 DEBUG [2013-12-20 23:46:59]  Date:Fri, 20 Dec 2013 15:46:43 GMT
+39111 DEBUG [2013-12-20 23:46:59]  Content-Type:application/json;charset=UTF-8
+39111 DEBUG [2013-12-20 23:46:59]  Transfer-Encoding:chunked
+39112 DEBUG [2013-12-20 23:46:59]  Connection:keep-alive
+39112 DEBUG [2013-12-20 23:46:59]  Api-Server-IP:10.77.108.41
+39112 DEBUG [2013-12-20 23:46:59]  Vary:Accept-Encoding
+39112 WARN  [2013-12-20 23:46:59]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+39114 DEBUG [2013-12-20 23:46:59]  {"created_at":"Fri Dec 20 23:46:04 +0800 2013","id":3657730478483914,"mid":"3657730478483914","idstr":"3657730478483914","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":1,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":1,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:47:51]  Request:
+1    DEBUG [2013-12-20 23:47:51]  POSThttps://api.weibo.com/2/statuses/update.json
+168  DEBUG [2013-12-20 23:47:51]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+168  DEBUG [2013-12-20 23:47:51]  API-RemoteIP: 59.66.122.158
+1601 DEBUG [2013-12-20 23:47:53]  Response:
+1601 DEBUG [2013-12-20 23:47:53]  https StatusCode:200
+1601 DEBUG [2013-12-20 23:47:53]  Server:nginx/1.2.0
+1601 DEBUG [2013-12-20 23:47:53]  Date:Fri, 20 Dec 2013 15:47:37 GMT
+1601 DEBUG [2013-12-20 23:47:53]  Content-Type:application/json;charset=UTF-8
+1602 DEBUG [2013-12-20 23:47:53]  Transfer-Encoding:chunked
+1602 DEBUG [2013-12-20 23:47:53]  Connection:keep-alive
+1602 DEBUG [2013-12-20 23:47:53]  Api-Server-IP:10.77.108.53
+1602 DEBUG [2013-12-20 23:47:53]  Vary:Accept-Encoding
+1608 WARN  [2013-12-20 23:47:53]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1609 DEBUG [2013-12-20 23:47:53]  {"created_at":"Fri Dec 20 23:47:35 +0800 2013","id":3657730860196724,"mid":"3657730860196724","idstr":"3657730860196724","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+1675 INFO  [2013-12-20 23:47:53]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657730860196724, createdAt=Fri Dec 20 23:47:35 CST 2013, id=3657730860196724, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657730860196724, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37747 DEBUG [2013-12-20 23:48:29]  Request:
+37747 DEBUG [2013-12-20 23:48:29]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37750 DEBUG [2013-12-20 23:48:29]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37751 DEBUG [2013-12-20 23:48:29]  API-RemoteIP: 59.66.122.158
+38312 DEBUG [2013-12-20 23:48:29]  Response:
+38313 DEBUG [2013-12-20 23:48:29]  https StatusCode:200
+38313 DEBUG [2013-12-20 23:48:29]  Server:nginx/1.2.0
+38313 DEBUG [2013-12-20 23:48:29]  Date:Fri, 20 Dec 2013 15:48:14 GMT
+38313 DEBUG [2013-12-20 23:48:29]  Content-Type:application/json;charset=UTF-8
+38313 DEBUG [2013-12-20 23:48:29]  Transfer-Encoding:chunked
+38313 DEBUG [2013-12-20 23:48:29]  Connection:keep-alive
+38313 DEBUG [2013-12-20 23:48:29]  Api-Server-IP:10.77.108.41
+38314 DEBUG [2013-12-20 23:48:29]  Vary:Accept-Encoding
+38314 WARN  [2013-12-20 23:48:29]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38315 DEBUG [2013-12-20 23:48:29]  {"created_at":"Fri Dec 20 23:47:35 +0800 2013","id":3657730860196724,"mid":"3657730860196724","idstr":"3657730860196724","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":1,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:49:06]  Request:
+1    DEBUG [2013-12-20 23:49:06]  POSThttps://api.weibo.com/2/statuses/update.json
+154  DEBUG [2013-12-20 23:49:06]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+154  DEBUG [2013-12-20 23:49:06]  API-RemoteIP: 59.66.122.158
+1560 DEBUG [2013-12-20 23:49:07]  Response:
+1560 DEBUG [2013-12-20 23:49:07]  https StatusCode:200
+1560 DEBUG [2013-12-20 23:49:07]  Server:nginx/1.2.0
+1561 DEBUG [2013-12-20 23:49:07]  Date:Fri, 20 Dec 2013 15:48:51 GMT
+1561 DEBUG [2013-12-20 23:49:07]  Content-Type:application/json;charset=UTF-8
+1561 DEBUG [2013-12-20 23:49:07]  Transfer-Encoding:chunked
+1561 DEBUG [2013-12-20 23:49:07]  Connection:keep-alive
+1562 DEBUG [2013-12-20 23:49:07]  Api-Server-IP:10.77.108.51
+1562 DEBUG [2013-12-20 23:49:07]  Vary:Accept-Encoding
+1568 WARN  [2013-12-20 23:49:07]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1570 DEBUG [2013-12-20 23:49:07]  {"created_at":"Fri Dec 20 23:48:49 +0800 2013","id":3657731170600193,"mid":"3657731170600193","idstr":"3657731170600193","text":"Happy birthday, the guy we love","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":43,"friends_count":105,"statuses_count":95,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+1614 INFO  [2013-12-20 23:49:07]  Status [user=User [id=2270330061, screenName=轻烟亦雨, name=轻烟亦雨, province=11, city=8, location=北京 海淀区, description=, url=, profileImageUrl=http://tp2.sinaimg.cn/2270330061/50/5649405377/1, userDomain=, gender=m, followersCount=43, friendsCount=105, statusesCount=95, favouritesCount=7, createdAt=Mon Aug 15 15:45:05 CST 2011, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp2.sinaimg.cn/2270330061/180/5649405377/1, onlineStatus=0, status=null, biFollowersCount=11, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3657731170600193, createdAt=Fri Dec 20 23:48:49 CST 2013, id=3657731170600193, text=Happy birthday, the guy we love, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3657731170600193, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]
+37556 DEBUG [2013-12-20 23:49:43]  Request:
+37557 DEBUG [2013-12-20 23:49:43]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37560 DEBUG [2013-12-20 23:49:43]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37560 DEBUG [2013-12-20 23:49:43]  API-RemoteIP: 59.66.122.158
+38122 DEBUG [2013-12-20 23:49:44]  Response:
+38122 DEBUG [2013-12-20 23:49:44]  https StatusCode:200
+38122 DEBUG [2013-12-20 23:49:44]  Server:nginx/1.2.0
+38123 DEBUG [2013-12-20 23:49:44]  Date:Fri, 20 Dec 2013 15:49:28 GMT
+38123 DEBUG [2013-12-20 23:49:44]  Content-Type:application/json;charset=UTF-8
+38123 DEBUG [2013-12-20 23:49:44]  Transfer-Encoding:chunked
+38124 DEBUG [2013-12-20 23:49:44]  Connection:keep-alive
+38125 DEBUG [2013-12-20 23:49:44]  Api-Server-IP:10.77.108.50
+38126 DEBUG [2013-12-20 23:49:44]  Vary:Accept-Encoding
+38126 WARN  [2013-12-20 23:49:44]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38127 DEBUG [2013-12-20 23:49:44]  {"created_at":"Fri Dec 20 23:48:49 +0800 2013","id":3657731170600193,"mid":"3657731170600193","idstr":"3657731170600193","text":"Happy birthday, the guy we love","source":"<a href=\"http://app.weibo.com/t/feed/2JDM0i\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":2270330061,"idstr":"2270330061","class":1,"screen_name":"轻烟亦雨","name":"轻烟亦雨","province":"11","city":"8","location":"北京 海淀区","description":"","url":"","profile_image_url":"http://tp2.sinaimg.cn/2270330061/50/5649405377/1","profile_url":"u/2270330061","domain":"","weihao":"","gender":"m","followers_count":40,"friends_count":105,"statuses_count":103,"favourites_count":7,"created_at":"Mon Aug 15 15:45:05 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","avatar_hd":"http://tp2.sinaimg.cn/2270330061/180/5649405377/1","verified_reason":"","follow_me":false,"online_status":1,"bi_followers_count":11,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+0    DEBUG [2013-12-20 23:49:50]  Request:
+1    DEBUG [2013-12-20 23:49:50]  POSThttps://api.weibo.com/2/statuses/update.json
+160  DEBUG [2013-12-20 23:49:50]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+160  DEBUG [2013-12-20 23:49:50]  API-RemoteIP: 59.66.122.158
+1536 DEBUG [2013-12-20 23:49:52]  Response:
+1536 DEBUG [2013-12-20 23:49:52]  https StatusCode:403
+1536 DEBUG [2013-12-20 23:49:52]  Server:nginx/1.2.0
+1536 DEBUG [2013-12-20 23:49:52]  Date:Fri, 20 Dec 2013 15:49:36 GMT
+1537 DEBUG [2013-12-20 23:49:52]  Content-Type:application/json;charset=UTF-8
+1537 DEBUG [2013-12-20 23:49:52]  Transfer-Encoding:chunked
+1537 DEBUG [2013-12-20 23:49:52]  Connection:keep-alive
+1537 DEBUG [2013-12-20 23:49:52]  Api-Server-IP:10.77.108.45
+1538 DEBUG [2013-12-20 23:49:52]  Vary:Accept-Encoding
+1545 WARN  [2013-12-20 23:49:52]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1547 DEBUG [2013-12-20 23:49:52]  {"error":"User requests for /statuses/update out of rate limit!","error_code":10024,"request":"/2/statuses/update.json"}
+
+37343 DEBUG [2013-12-20 23:50:27]  Request:
+37344 DEBUG [2013-12-20 23:50:27]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37347 DEBUG [2013-12-20 23:50:27]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37347 DEBUG [2013-12-20 23:50:27]  API-RemoteIP: 59.66.122.158
+37887 DEBUG [2013-12-20 23:50:28]  Response:
+37888 DEBUG [2013-12-20 23:50:28]  https StatusCode:400
+37888 DEBUG [2013-12-20 23:50:28]  Server:nginx/1.2.0
+37888 DEBUG [2013-12-20 23:50:28]  Date:Fri, 20 Dec 2013 15:50:12 GMT
+37888 DEBUG [2013-12-20 23:50:28]  Content-Type:application/json;charset=UTF-8
+37889 DEBUG [2013-12-20 23:50:28]  Transfer-Encoding:chunked
+37889 DEBUG [2013-12-20 23:50:28]  Connection:keep-alive
+37889 DEBUG [2013-12-20 23:50:28]  Api-Server-IP:10.77.108.42
+37889 DEBUG [2013-12-20 23:50:28]  Vary:Accept-Encoding
+37890 WARN  [2013-12-20 23:50:28]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+37890 DEBUG [2013-12-20 23:50:28]  {"error":"parameter (id)'s value invalid,expect (long[1~9223372036854775807]), but get (0), see doc for more info.","error_code":10017,"request":"/2/statuses/destroy.json"}
+
+0    DEBUG [2013-12-20 23:50:58]  Request:
+1    DEBUG [2013-12-20 23:50:58]  POSThttps://api.weibo.com/2/statuses/update.json
+170  DEBUG [2013-12-20 23:50:58]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+170  DEBUG [2013-12-20 23:50:58]  API-RemoteIP: 59.66.122.158
+1573 DEBUG [2013-12-20 23:51:00]  Response:
+1574 DEBUG [2013-12-20 23:51:00]  https StatusCode:403
+1574 DEBUG [2013-12-20 23:51:00]  Server:nginx/1.2.0
+1574 DEBUG [2013-12-20 23:51:00]  Date:Fri, 20 Dec 2013 15:50:44 GMT
+1574 DEBUG [2013-12-20 23:51:00]  Content-Type:application/json;charset=UTF-8
+1575 DEBUG [2013-12-20 23:51:00]  Transfer-Encoding:chunked
+1575 DEBUG [2013-12-20 23:51:00]  Connection:keep-alive
+1575 DEBUG [2013-12-20 23:51:00]  Api-Server-IP:10.77.108.37
+1575 DEBUG [2013-12-20 23:51:00]  Vary:Accept-Encoding
+1583 WARN  [2013-12-20 23:51:00]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1584 DEBUG [2013-12-20 23:51:00]  {"error":"User requests for /statuses/update out of rate limit!","error_code":10024,"request":"/2/statuses/update.json"}
+
+37892 DEBUG [2013-12-20 23:51:36]  Request:
+37893 DEBUG [2013-12-20 23:51:36]  POSThttps://api.weibo.com/2/statuses/destroy.json
+37895 DEBUG [2013-12-20 23:51:36]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+37896 DEBUG [2013-12-20 23:51:36]  API-RemoteIP: 59.66.122.158
+38451 DEBUG [2013-12-20 23:51:37]  Response:
+38452 DEBUG [2013-12-20 23:51:37]  https StatusCode:400
+38452 DEBUG [2013-12-20 23:51:37]  Server:nginx/1.2.0
+38452 DEBUG [2013-12-20 23:51:37]  Date:Fri, 20 Dec 2013 15:51:21 GMT
+38452 DEBUG [2013-12-20 23:51:37]  Content-Type:application/json;charset=UTF-8
+38452 DEBUG [2013-12-20 23:51:37]  Transfer-Encoding:chunked
+38453 DEBUG [2013-12-20 23:51:37]  Connection:keep-alive
+38453 DEBUG [2013-12-20 23:51:37]  Api-Server-IP:10.77.108.44
+38453 DEBUG [2013-12-20 23:51:37]  Vary:Accept-Encoding
+38453 WARN  [2013-12-20 23:51:37]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+38499 DEBUG [2013-12-20 23:51:37]  {"error":"parameter (id)'s value invalid,expect (long[1~9223372036854775807]), but get (0), see doc for more info.","error_code":10017,"request":"/2/statuses/destroy.json"}
+
+0    DEBUG [2013-12-20 23:53:27]  Request:
+1    DEBUG [2013-12-20 23:53:27]  POSThttps://api.weibo.com/2/statuses/update.json
+165  DEBUG [2013-12-20 23:53:27]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+165  DEBUG [2013-12-20 23:53:27]  API-RemoteIP: 59.66.122.158
+2735 DEBUG [2013-12-20 23:53:30]  Response:
+2735 DEBUG [2013-12-20 23:53:30]  https StatusCode:403
+2735 DEBUG [2013-12-20 23:53:30]  Server:nginx/1.2.0
+2735 DEBUG [2013-12-20 23:53:30]  Date:Fri, 20 Dec 2013 15:53:13 GMT
+2736 DEBUG [2013-12-20 23:53:30]  Content-Type:application/json;charset=UTF-8
+2736 DEBUG [2013-12-20 23:53:30]  Transfer-Encoding:chunked
+2736 DEBUG [2013-12-20 23:53:30]  Connection:keep-alive
+2736 DEBUG [2013-12-20 23:53:30]  Api-Server-IP:10.77.108.46
+2736 DEBUG [2013-12-20 23:53:30]  Vary:Accept-Encoding
+2743 WARN  [2013-12-20 23:53:30]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2744 DEBUG [2013-12-20 23:53:30]  {"error":"User requests for /statuses/update out of rate limit!","error_code":10024,"request":"/2/statuses/update.json"}
+
+38615 DEBUG [2013-12-20 23:54:06]  Request:
+38616 DEBUG [2013-12-20 23:54:06]  POSThttps://api.weibo.com/2/statuses/destroy.json
+38618 DEBUG [2013-12-20 23:54:06]  Authorization: OAuth2 2.00nYEeTCoMqArB5a7e2e34ba0NF2c_
+38618 DEBUG [2013-12-20 23:54:06]  API-RemoteIP: 59.66.122.158
+39155 DEBUG [2013-12-20 23:54:06]  Response:
+39155 DEBUG [2013-12-20 23:54:06]  https StatusCode:400
+39155 DEBUG [2013-12-20 23:54:06]  Server:nginx/1.2.0
+39156 DEBUG [2013-12-20 23:54:06]  Date:Fri, 20 Dec 2013 15:53:51 GMT
+39156 DEBUG [2013-12-20 23:54:06]  Content-Type:application/json;charset=UTF-8
+39156 DEBUG [2013-12-20 23:54:06]  Transfer-Encoding:chunked
+39156 DEBUG [2013-12-20 23:54:06]  Connection:keep-alive
+39156 DEBUG [2013-12-20 23:54:06]  Api-Server-IP:10.77.108.56
+39156 DEBUG [2013-12-20 23:54:06]  Vary:Accept-Encoding
+39156 WARN  [2013-12-20 23:54:06]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+39157 DEBUG [2013-12-20 23:54:06]  {"error":"parameter (id)'s value invalid,expect (long[1~9223372036854775807]), but get (0), see doc for more info.","error_code":10017,"request":"/2/statuses/destroy.json"}
+

@@ -117,7 +117,7 @@ public class ImageDiaryManager extends DiaryManager {
 	
 	@Override
 	public Diary getDiary(Diary diary){
-		String getlist="SELECT * FROM ImageList where diaryid = " +diary.getId();
+		String getlist="SELECT * FROM imagelist where diaryid = " +diary.getId();
 		try{
 			dataManager.connectToDatabase();
 			dataManager.setQuery(getlist);

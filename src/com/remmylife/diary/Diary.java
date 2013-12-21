@@ -15,12 +15,15 @@ public class Diary implements Serializable
 	private Date lastSaveDate;
 	private Weather weather;
 	private boolean shared;
-	
+	private boolean sharedToWeibo;
+	private String mid;
 	
 	
 	public void init(){
 		this.id=0;
 		this.shared= false;
+		this.sharedToWeibo = false;
+		this.mid = null; 
 	}
 	public Diary() {
 		super();
@@ -64,7 +67,24 @@ public class Diary implements Serializable
 		this.weather = weather;
 		this.shared = shared;
 	}
+	
+	
 
+	public Diary(int id, int userid, DiaryType type, String title,
+			Date createDate, Date lastSaveDate, Weather weather,
+			boolean shared, boolean sharedToWeibo, String mid) {
+		super();
+		this.id = id;
+		this.userid = userid;
+		this.type = type;
+		this.title = title;
+		this.createDate = createDate;
+		this.lastSaveDate = lastSaveDate;
+		this.weather = weather;
+		this.shared = shared;
+		this.sharedToWeibo = sharedToWeibo;
+		this.mid = mid;
+	}
 	public Diary(Diary diary){
 		this.id = diary.getId();
 		this.userid=diary.getUserid();
@@ -74,9 +94,13 @@ public class Diary implements Serializable
 		this.lastSaveDate = diary.getLastSaveDate();
 		this.weather = diary.getWeather();
 		this.shared = diary.isShared();
+		this.sharedToWeibo=diary.isSharedToWeibo();
+		this.mid = diary.getMid();
+		
 	}
 
-
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -159,6 +183,21 @@ public class Diary implements Serializable
 	public void setUserid(int userid) {
 		this.userid = userid;
 	}
+	
+	
+	public boolean isSharedToWeibo() {
+		return sharedToWeibo;
+	}
+	public void setSharedToWeibo(boolean sharedToWeibo) {
+		this.sharedToWeibo = sharedToWeibo;
+	}
+	public String getMid() {
+		return mid;
+	}
+	public void setMid(String mid) {
+		this.mid = mid;
+	}
+	
 	
 	public String getTextContent()
 	{

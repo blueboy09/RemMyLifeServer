@@ -28,7 +28,9 @@ public  class Manager {
 		this.driver = "com.mysql.jdbc.Driver";
 		this.url = "jdbc:mysql://localhost:3306/RemMyLife";
 		this.user = "yfjin";
-		this.password = "1234";
+		this.password="1234";
+//		this.user = "root";
+//		this.password = "123456";
 		dataManager = new DataManager(driver,url,user,password);
 		
 	}
@@ -36,7 +38,7 @@ public  class Manager {
 	public Manager(String driver, String url, String user, String password) {
 		super();
 		dataManager = new DataManager();
-		dataManager.execSqlFile("initial.sql");
+		dataManager.execSqlFile("initial2.sql");
 		dataManager.setUrl(dataManager.getUrl()+"RemMyLife");
 		this.driver = driver;
 		this.url = url;

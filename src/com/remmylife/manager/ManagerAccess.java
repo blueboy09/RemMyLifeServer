@@ -8,6 +8,7 @@ import com.remmylife.dbacess.*;
 import com.remmylife.diary.*;
 import com.remmylife.manager.*;
 
+
 public class ManagerAccess {
 	
 	UserManager userManager = new UserManager();
@@ -16,12 +17,13 @@ public class ManagerAccess {
 	ImageDiaryManager imageDiaryManager = new ImageDiaryManager();
 	VoiceDiaryManager voiceDiaryManager = new VoiceDiaryManager();
 	CommentManager commentManager = new CommentManager();
+
 	
 	public ManagerAccess() {
 		super();
 	}
 	
-	// user µÄ²Ù×÷
+	// user ï¿½Ä²ï¿½ï¿½ï¿½
 	public boolean loginByName(String userName, String password){
 		return userManager.signin(userName, password);
 	}
@@ -35,10 +37,15 @@ public class ManagerAccess {
 	}
 	
 	public boolean saveUser(User user){
-		if(userManager.signup(user)){
-			return true;
-		}else{
-			return false;
+		if(user.getUserID()==0){
+			if(userManager.signup(user)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		else{
+			return userManager.save(user);
 		}
 	}
 	
@@ -46,7 +53,7 @@ public class ManagerAccess {
 		return userManager.delete(user);
 	}
 	
-	// diary µÄ²Ù×÷
+	// diary ï¿½Ä²ï¿½ï¿½ï¿½
 	
 	public boolean deleteDiary(Diary diary){
 		return diaryManager.delete(diary);
@@ -62,12 +69,14 @@ public class ManagerAccess {
 		return false;
 	}
 	
-	public void shareDiary(Diary diary, User self){
-		diaryManager.shareDiary(diary, self);
+	public boolean shareDiary(Diary diary, User self){
+		
+		return diaryManager.shareDiary(diary, self);
+		
 	}
 	
-	public void unshareDiary(Diary diary, User self){
-		diaryManager.unshareDiary(diary, self);
+	public boolean unshareDiary(Diary diary, User self){
+		return diaryManager.unshareDiary(diary, self);
 	}
 	
 	
@@ -86,9 +95,9 @@ public class ManagerAccess {
 	}
 	
 	// Comment
-	public void saveComment(Diary diary,User user,String note){
+	public boolean saveComment(Diary diary,User user,String note){
 		Comment comment = new Comment(user.getUserID(),diary.getId(),note);
-		commentManager.save(comment);
+		return commentManager.save(comment);
 	}
 	
 	public ArrayList<Comment> getComment(Diary diary){
@@ -100,7 +109,7 @@ public class ManagerAccess {
 	
 	// search
 	public ArrayList<Diary> searchByTitle(String title, User self, boolean own){
-		String title1 = diaryManager.dataManager.avoidAqlInjection(title);
+		String title1 = diaryManager.dataManager.avoidSqlInjection(title);
 		String listByTitle= "Select * from diarylist where `title` like \"%"+title1 +"%\"";
 		return diaryManager.search(listByTitle, self, own);
 	}
@@ -124,7 +133,7 @@ public class ManagerAccess {
 	}
 	
 	public ArrayList<Diary> searchByContent(String content, User self, boolean own){
-		String content1 = diaryManager.dataManager.avoidAqlInjection(content);
+		String content1 = diaryManager.dataManager.avoidSqlInjection(content);
 		ArrayList<Diary> diaryList = new ArrayList<Diary>();
 		diaryList.addAll(textDiaryManager.searchByContent(content1, self, own));
 		diaryList.addAll(imageDiaryManager.searchByContent(content1, self, own));
@@ -144,6 +153,7 @@ public class ManagerAccess {
 		return diaryList;
 
 	}
+
 
 	
 	

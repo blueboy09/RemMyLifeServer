@@ -17,7 +17,7 @@ public class TestService {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//´Ó½ñÌìÆð£¬ºÃºÃ×ödemo
+		//ä»Žä»Šå¤©èµ·è®¤çœŸå†™demo
 		
 		ManagerAccess MA = new ManagerAccess();
 		ManagerService MS = new ManagerService();
@@ -58,21 +58,24 @@ public class TestService {
 		 
 		
 		//3: saveUser
-		String userName ="yfjin@126.com";
+		String userName ="bluewould@gmail.com";
 		String password = "1234";
 		String nickName ="blueboy";
 		String dateq = "1990-09-03";
-
-		user.setUserID(0);
+		String wid = "3656882579045677" ;
+		
+		user.setUserID(5);
 		user.setUserName(userName);
 		user.setPassword(password);
 		user.setNickName(nickName);
 		user.setSex(Sex.male);
+		user.setWid(wid);
 
 		SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy-MM-dd");  
 		ParsePosition pos;  
 		pos = new ParsePosition(0);
 		user.setBirthday(sDateFormat.parse(dateq,pos));
+		
 		
     	String filedir="C:\\Users\\yfjin\\Downloads\\SmallImage\\1 (1).png"; 
         File file = new File(filedir);
@@ -124,12 +127,15 @@ public class TestService {
 
 		user.setUserID(2);
 		user.setUserName(user2);
-		diary.setId(8);
+		diary.setId(12);
+		diary.setUserid(2);
+		
 		diaryByte=Utils.convertToByteArray(diary);
 		userByte=Utils.convertToByteArray(user);
 		MS.shareDiary(diaryByte, userByte);
-		diary.setId(12);
-		userByte=Utils.convertToByteArray(user);
+		
+		diary.setId(8);
+		diaryByte=Utils.convertToByteArray(diary);
 		MS.unshareDiary(diaryByte, userByte);
 		
 		//4:getDiaryList
@@ -166,8 +172,8 @@ public class TestService {
 		
 		// operator 
 		//1: searchByTitle
-		System.out.println("--------------------ÎÒÊÇ·Ö¸ô·û");
-		String title = "ÐÄ";
+		System.out.println("--------------------ï¿½ï¿½ï¿½Ç·Ö¸ï¿½ï¿½ï¿½");
+		String title = "ï¿½ï¿½";
 		user.setUserID(1);
 		userByte = Utils.convertToByteArray(user);
 		diarylistByte = MS.searchByTitle(title, userByte, true);
@@ -181,27 +187,28 @@ public class TestService {
 			System.out.println("Others' diaries:"+dl2.get(i).getTitle());
 		}
 
-		System.out.println("--------------------ÎÒÊÇ·Ö¸ô·û");
+		System.out.println("--------------------ï¿½ï¿½ï¿½Ç·Ö¸ï¿½ï¿½ï¿½");
 		//2: searchByDate
 		String date1 = "2013-09-03";
 		pos.setIndex(0);
 		Date date = sDateFormat.parse(date1,pos);
 		user.setUserID(1);
+		byte[] dateb = Utils.convertToByteArray(date);
 		userByte = Utils.convertToByteArray(user);
-		diarylistByte = MS.searchByDate(date, userByte, true);
-		ArrayList<Diary> dl3 = (ArrayList<Diary>)Utils.convertToObject(MS.searchByDate(date,userByte,true));
+		diarylistByte = MS.searchByDate(dateb, userByte, true);
+		ArrayList<Diary> dl3 = (ArrayList<Diary>)Utils.convertToObject(MS.searchByDate(dateb,userByte,true));
 		
 		for (int i=0;i<dl3.size();i++){
 			System.out.println("My own diaries:"+dl3.get(i).getCreateDate());
 		}
-		ArrayList<Diary> dl4 = (ArrayList<Diary>)Utils.convertToObject(MS.searchByDate(date,userByte,false));
+		ArrayList<Diary> dl4 = (ArrayList<Diary>)Utils.convertToObject(MS.searchByDate(dateb,userByte,false));
 		for (int i=0;i<dl4.size();i++){
 			System.out.println("Others' diaries:"+dl4.get(i).getCreateDate());
 		}
 		
-		System.out.println("--------------------ÎÒÊÇ·Ö¸ô·û");
+		System.out.println("--------------------ï¿½ï¿½ï¿½Ç·Ö¸ï¿½ï¿½ï¿½");
 		//3: searchByContent
-		String content = "µÄ";
+		String content = "ï¿½ï¿½";
 		user.setUserID(1);
 		userByte = Utils.convertToByteArray(user);
 		diarylistByte = Utils.convertToByteArray(user);
@@ -215,7 +222,7 @@ public class TestService {
 			System.out.println("Others' diaries:"+dl6.get(i).getTitle());
 		}
 				
-		System.out.println("--------------------ÎÒÊÇ·Ö¸ô·û");
+		System.out.println("--------------------ï¿½ï¿½ï¿½Ç·Ö¸ï¿½ï¿½ï¿½");
 		
 		//4: sortbydate
 		user.setUserID(1);
@@ -228,6 +235,30 @@ public class TestService {
 		for (int i=0;i<dl8.size();i++){
 			System.out.println("Others' diaries:"+dl8.get(i).getCreateDate());
 		}
+		
+		
+		// weibo 
+		String accessToken = "2.00nYEeTCoMqArB5a7e2e34ba0NF2c_";
+		diary.setId(2);
+		
+		MS.shareToWeibo(Utils.convertToByteArray(diary), accessToken);
+		try { Thread.sleep (5000) ; 
+		} catch (InterruptedException ie){}
+		
+		diary.setId(4);
+		diary.setType(DiaryType.IMAGE_DIARY);
+		MS.shareToWeibo(Utils.convertToByteArray(diary), accessToken);
+		
+
+		try { Thread.sleep (30000) ; 
+		} catch (InterruptedException ie){}
+		diary.setId(2);
+		MS.deleteFromWeibo(Utils.convertToByteArray(diary), accessToken);
+		
 	}
 
+	
+
+	
+	
 }

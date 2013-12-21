@@ -16,7 +16,7 @@ public class MainTest {
 	 */
 	public static void main(String[] args) {
 		
-		//从今天起，好好做demo
+		//demo
 		
 		ManagerAccess MA = new ManagerAccess();
 		
@@ -147,8 +147,8 @@ public class MainTest {
 		
 		// operator 
 		//1: searchByTitle
-		System.out.println("--------------------我是分隔符");
-		String title = "心";
+		System.out.println("--------------------锟斤拷锟角分革拷锟斤拷");
+		String title = "锟斤拷";
 		user.setUserID(1);
 		ArrayList<Diary> dl1 = MA.searchByTitle(title,user,true);
 		for (int i=0;i<dl1.size();i++){
@@ -159,7 +159,7 @@ public class MainTest {
 			System.out.println("Others' diaries:"+dl2.get(i).getTitle());
 		}
 
-		System.out.println("--------------------我是分隔符");
+		System.out.println("--------------------锟斤拷锟角分革拷锟斤拷");
 		//2: searchByDate
 		String date1 = "2013-09-03";
 		pos.setIndex(0);
@@ -174,9 +174,9 @@ public class MainTest {
 			System.out.println("Others' diaries:"+dl4.get(i).getCreateDate());
 		}
 		
-		System.out.println("--------------------我是分隔符");
+		System.out.println("--------------------锟斤拷锟角分革拷锟斤拷");
 		//3: searchByContent
-		String content = "的";
+		String content = "锟斤拷";
 		user.setUserID(1);
 		ArrayList<Diary> dl5 = MA.searchByContent(content,user,true);
 		for (int i=0;i<dl5.size();i++){
@@ -187,7 +187,7 @@ public class MainTest {
 			System.out.println("Others' diaries:"+dl6.get(i).getTitle());
 		}
 				
-		System.out.println("--------------------我是分隔符");
+		System.out.println("--------------------锟斤拷锟角分革拷锟斤拷");
 		//4: sortbydate
 		user.setUserID(1);
 		ArrayList<Diary> dl7 = MA.sortByDate(user,true);

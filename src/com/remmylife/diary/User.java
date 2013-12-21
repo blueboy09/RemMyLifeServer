@@ -3,6 +3,8 @@ package com.remmylife.diary;
 import java.io.Serializable;
 import java.util.Date;
 
+import sun.awt.WindowIDProvider;
+
 
 
 
@@ -13,13 +15,16 @@ public class User implements Serializable{
 	private String nickName;
 	private Sex sex;
 	private Date birthday;
+	private String wid;
 	private byte[] headportrait;
+
 
 
 	public void init(){
 		this.userID=0;
 		this.sex=Sex.male;
 		this.birthday = new Date(); 
+		this.wid = null;
 	}
 	public User() {
 		super();
@@ -38,6 +43,20 @@ public class User implements Serializable{
 		this.headportrait = headportrait;
 	}
 
+	
+	
+	public User(int userID, String userName, String password, String nickName,
+			Sex sex, Date birthday, byte[] headportrait, String wid) {
+		super();
+		this.userID = userID;
+		this.userName = userName;
+		this.password = password;
+		this.nickName = nickName;
+		this.sex = sex;
+		this.birthday = birthday;
+		this.headportrait = headportrait;
+		this.wid = wid;
+	}
 	public User(User user){
 		super();
 		this.userID = user.getUserID();
@@ -47,9 +66,16 @@ public class User implements Serializable{
 		this.sex = user.getSex();
 		this.birthday = user.getBirthday();
 		this.headportrait = user.getHeadportrait();
+		this.wid = user.getWid();
 	}
 
 	
+	public String getWid() {
+		return wid;
+	}
+	public void setWid(String wid) {
+		this.wid = wid;
+	}
 	public int getUserID() {
 		return userID;
 	}

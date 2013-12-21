@@ -62,13 +62,15 @@ public class UserManager extends Manager {
 		
 		SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");    
         String dateq = sDateFormat.format(birthday);
-
+        String wid = user.getWid();
         if(userid==0){    			
     			
 			try{
 				java.sql.Connection con = DriverManager.getConnection(super.url,super.user,super.password);
-				java.sql.PreparedStatement pS = con.prepareStatement("insert into `userlist`(userName,password,nickName,sex,birthday,headPortrait) values ('"
-						 +userName +"', '"+password+"', '"+nickName+"', '"+sexq+ "', '"+dateq+"', ?);");
+				java.sql.PreparedStatement pS = con.prepareStatement("insert into `userlist`(userName,password,nickName,sex,birthday,wid,headPortrait) values ('"
+						 +userName +"', '"+password+"', '"+nickName+"', '"+sexq+ "', '"+dateq+"', '"+ wid +"', ?);");
+				//		 +userName +"', '"+password+"', '"+nickName+"', '"+sexq+ "', '"+dateq+"', ?,'"+wid+"');");
+				// +userName +"', '"+password+"', '"+nickName+"', '"+sexq+ "', '"+dateq+"', ?);");
 				InputStream iS= new ByteArrayInputStream(headportrait);
 				pS.setBinaryStream(1, iS,(int)(headportrait.length));
 				pS.executeUpdate();
@@ -84,7 +86,8 @@ public class UserManager extends Manager {
 				String update;
 				if(headportrait!=null){
 					update ="update `userlist` SET `userName`= '"+ userName+"', `password`= '"+ password+"', `nickName`= '"
-							+nickName+"', `sex`='"+ sexq+"',`birthday` ='"+dateq+"', `headPortrait` = ? where `userid`= "+userid;                    
+							+nickName+"', `sex`='"+ sexq+"',`birthday` ='"+dateq+"', `wid` ='"+wid+ "',`headPortrait` = ? where `userid`= "+userid;
+					//		+nickName+"', `sex`='"+ sexq+"',`birthday` ='"+dateq+"', `headPortrait` = ? where `userid`= "+userid;                    
 					java.sql.PreparedStatement pS = con.prepareStatement(update);
 					//java.sql.PreparedStatement pS = con.prepareStatement("insert into `userlist`(userid,uerName,password,nickName,sex,birthday,headPortrait) values ('"+userid+"', '"+ userName +"', '"+password+"', '"+nickName+"', '"+sexq+ "', '"+dateq+"', ?);");
 					InputStream iS= new ByteArrayInputStream(headportrait);
@@ -92,7 +95,8 @@ public class UserManager extends Manager {
 					pS.executeUpdate();					
 				}else{
 					update = "update `userlist` SET `userName`= '"+ userName+"', `password`= '"+ password+"', `nickName`= '"
-							+nickName+"', `sex`='"+ sexq+"',`birthday` ='"+dateq+"';";
+							+nickName+"', `sex`='"+ sexq+"',`birthday` ='"+dateq+"',`wid` ='"+wid+"' where `userid`= "+userid;
+					//		+nickName+"', `sex`='"+ sexq+"',`birthday` ='"+dateq+"';";
 					java.sql.PreparedStatement pS = con.prepareStatement(update);
 					pS.executeUpdate();
 				}
@@ -125,7 +129,7 @@ public class UserManager extends Manager {
 	}
 	
 	public User getUser(User user){
-		String getlist = "Select * from UserList where `userid` = " + user.getUserID();
+		String getlist = "Select * from userlist where `userid` = " + user.getUserID();
 		ArrayList<User> UserList = execSqlQuery(getlist);
 		return UserList.get(0);
 		
@@ -133,7 +137,7 @@ public class UserManager extends Manager {
 	}
 	
 	public boolean check(String username, String password){
-		String check = "Select * from USERLIST where `userName` = '" +username+"' and `password` = '"+ password+"';";
+		String check = "Select * from userlist where `userName` = '" +username+"' and `password` = '"+ password+"';";
 		ArrayList<User> UserList = execSqlQuery(check);
 		if(UserList.get(0).getUserName()!= null){
 			return true;
@@ -145,7 +149,7 @@ public class UserManager extends Manager {
 	
 	public boolean check(String username){
 
-		String check = "Select * from USERLIST where `userName` = '" +username+"';";
+		String check = "select * from userlist where `userName` = '" +username+"';";
 		try {
 			dataManager.connectToDatabase();
 			dataManager.setQuery(check);
@@ -153,6 +157,7 @@ public class UserManager extends Manager {
 				dataManager.disconnectFromDatabase();
 				return true;
 			}else{
+				dataManager.disconnectFromDatabase();
 				return false;
 			}
 		} catch (Exception e) {
@@ -208,8 +213,10 @@ public class UserManager extends Manager {
 			birthday = (String)dataManager.getValueAt(i, 5);
 			pos = new ParsePosition(0);
 			user.setBirthday(sDateFormat.parse(birthday,pos));
+			
+			user.setWid((String)dataManager.getValueAt(i, 6));
 		}
-		UserList.add(new User(user));//ÓÃ²»ÓÃÐÂ½¨Ò»¸öclass
+		UserList.add(new User(user));//ï¿½Ã²ï¿½ï¿½ï¿½ï¿½Â½ï¿½Ò»ï¿½ï¿½class
 		for(int i=0 ; i < UserList.size(); i++){
 			user =UserList.get(i);
 			try {
@@ -229,7 +236,7 @@ public class UserManager extends Manager {
 				e.printStackTrace();
 			}
 		}
-		return UserList;//ÕâÀïÖ»°Ñadd½øÈ¥µÄÀàÐÞ¸ÄÁË,ÓÃ²»ÓÃÖØÐÂaddÒ»±é£¿
+		return UserList;//ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½addï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½ï¿½ï¿½,ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½addÒ»ï¿½é£¿
 
 	}
 }

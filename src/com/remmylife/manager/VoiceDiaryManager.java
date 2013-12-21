@@ -128,7 +128,7 @@ public class VoiceDiaryManager extends DiaryManager {
 	
 	@Override
 	public Diary getDiary(Diary diary){
-		String getlist="SELECT * FROM VoiceList where diaryid = " +diary.getId();
+		String getlist="SELECT * FROM voicelist where diaryid = " +diary.getId();
 		try{
 			dataManager.connectToDatabase();
 			dataManager.setQuery(getlist);

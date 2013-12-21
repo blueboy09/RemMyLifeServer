@@ -54,42 +54,125 @@ public class DiaryManager extends Manager{
 	}
 		
 	public Diary getDiary(Diary diary){
-		String getlist="SELECT * FROM DiaryList where diaryid = " +diary.getId();
+		String getlist="SELECT * FROM diarylist where diaryid = " +diary.getId();
 		ArrayList<Diary> diaryList = execSqlQuery(getlist);
 		return diaryList.get(0);
 	}
 	
-	public void shareDiary(Diary diary,User self){
+	
+	
+
+	public boolean shareDiary(Diary diary,User self){
 		if(diary.getUserid()==self.getUserID()){
-			String shared =  "update diarylist  SET shared = 1 where `diaryid`= "+diary.getId() ;
+			String shared =  "update diarylist  set SHARED = 1 where `diaryid`= " + diary.getId() ;
+			try {
+				dataManager.connectToDatabase();
+				dataManager.setUpdate(shared);
+				dataManager.disconnectFromDatabase();
+				return true;
+			} catch (Exception e) {
+				e.printStackTrace();
+				return false;
+			}
+				
+		}
+		return false;
+	}
+	
+
+	
+	public boolean unshareDiary(Diary diary, User self){
+		if(diary.getUserid()==self.getUserID()){
+			String unshared = "update diarylist  set shared = 0 where `diaryid`= "+diary.getId() ;
+			try {
+				dataManager.connectToDatabase();
+				dataManager.setUpdate(unshared);
+				dataManager.disconnectFromDatabase();
+				return true;
+			} catch (Exception e) {
+				e.printStackTrace();
+				return false;
+			}
+
+		}
+		return false;
+	}
+	
+	public boolean shareToWeibo(Diary diary){
+			String shared =  "update diarylist  set sharedToWeibo = 1 where `diaryid`= "+diary.getId() ;
 			
 			try {
 				dataManager.connectToDatabase();
 				dataManager.setUpdate(shared);
 				dataManager.disconnectFromDatabase();
+				return true;
 			} catch (Exception e) {
 				e.printStackTrace();
+				return false;
 			}
-
-		}
 	}
-	public void unshareDiary(Diary diary, User self){
-		if(diary.getUserid()==self.getUserID()){
-			String unshared = "update diarylist  SET shared = 0 where `diaryid`= "+diary.getId() ;
-			
-			try {
-				dataManager.connectToDatabase();
-				dataManager.setUpdate(unshared);
-				dataManager.disconnectFromDatabase();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+	
 
+	public boolean unshareToWeibo(Diary diary){
+		String unshared =  "update diarylist  set sharedToWeibo = 0 where `diaryid`= "+diary.getId() ;
+		
+		try {
+			dataManager.connectToDatabase();
+			dataManager.setUpdate(unshared);
+			dataManager.disconnectFromDatabase();
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
 		}
 	}
 	
+	
+	public boolean IsshareToWeibo(Diary diary){
+		String getmid = "select sharedToWeibo from diarylist where `diaryid` =" + diary.getId();
+		try {
+			dataManager.connectToDatabase();
+			dataManager.setQuery(getmid);			
+			String isSharedq =(String)dataManager.getValueAt(0, 0).toString();
+			boolean isShared = Boolean.valueOf(isSharedq);
+			dataManager.disconnectFromDatabase();
+			return isShared;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	public boolean setWeiboMid(Diary diary, String mid){
+		String setmid = "update diarylist  set Mid = '"+ mid +"' where `diaryid`= "+diary.getId() ;
+		try {
+			dataManager.connectToDatabase();
+			dataManager.setUpdate(setmid);
+			dataManager.disconnectFromDatabase();
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	//TODO
+	public String getWeiboMid(Diary diary){
+		String getmid = "select MID from diarylist where `diaryid` =" + diary.getId();
+		try {
+			dataManager.connectToDatabase();
+			dataManager.setQuery(getmid);			
+			String mid =(String)dataManager.getValueAt(0, 0).toString();
+			dataManager.disconnectFromDatabase();
+			return mid;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "0";
+		}
+	}
+	
+	
 	public int getId(){
-		String cValue = "SELECT max(diaryid) FROM diarylist";
+		String cValue = "SELECT max(diaryID) FROM diarylist";
 		try {
 			dataManager.connectToDatabase();
 		
@@ -232,7 +315,12 @@ public class DiaryManager extends Manager{
 			String shared=(String)dataManager.getValueAt(i, 7).toString();
 			diary.setShared(Boolean.valueOf(shared));
 			
-			DiaryList.add(new Diary(diary));//ÓÃ²»ÓÃÐÂ½¨Ò»¸öclass
+			String sharedToWeibo=(String)dataManager.getValueAt(i, 8).toString();
+			diary.setSharedToWeibo(Boolean.valueOf(sharedToWeibo));
+			
+			diary.setMid((String)dataManager.getValueAt(i, 9));
+			
+			DiaryList.add(new Diary(diary));//ï¿½Ã²ï¿½ï¿½ï¿½ï¿½Â½ï¿½Ò»ï¿½ï¿½class
 			}
 		return DiaryList;
 	}
